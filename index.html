@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+        --primary-color: #3498db;
+        --secondary-color: #2c3e50;
+        --accent-color: #e74c3c;
+        --light-color: #ecf0f1;
+        --dark-color: #2c3e50;
+        --text-color: #333;
+        --text-light: #7f8c8d;
+        --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        --transition: all 0.3s ease;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: var(--text-color);
+        background-color: #f9f9f9;
+      }
+
+      a {
+        text-decoration: none;
+        color: var(--primary-color);
+        transition: var(--transition);
+      }
+
+      a:hover {
+        color: var(--accent-color);
+      }
+
+      .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+      }
+
+      header {
+        background-color: var(--secondary-color);
+        color: white;
+        padding: 1rem 0;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        box-shadow: var(--shadow);
+      }
+
+      .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: white;
+      }
+
+      .logo span {
+        color: var(--primary-color);
+      }
+
+      nav ul {
+        display: flex;
+        list-style: none;
+      }
+
+      nav ul li {
+        margin-left: 1.5rem;
+      }
+
+      nav ul li a {
+        color: white;
+        font-weight: 500;
+      }
+
+      nav ul li a:hover {
+        color: var(--primary-color);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <a href="#" class="logo">Porto<span>folio</span></a>
+          <nav>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">Tentang</a></li>
+              <li><a href="#articles">Artikel</a></li>
+              <li><a href="#contact">Kontak</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
