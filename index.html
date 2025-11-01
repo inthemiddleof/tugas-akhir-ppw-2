@@ -90,6 +90,85 @@
       nav ul li a:hover {
         color: var(--primary-color);
       }
+
+      .hero {
+        background: linear-gradient(
+          135deg,
+          var(--primary-color),
+          var(--secondary-color)
+        );
+        color: white;
+        padding: 5rem 0;
+        text-align: center;
+      }
+
+      .hero-content h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .hero-content p {
+        font-size: 1.2rem;
+        max-width: 700px;
+        margin: 0 auto 2rem;
+      }
+
+      .btn {
+        display: inline-block;
+        background-color: var(--accent-color);
+        color: white;
+        padding: 0.8rem 1.5rem;
+        border-radius: 5px;
+        font-weight: 600;
+        transition: var(--transition);
+      }
+
+      .btn:hover {
+        background-color: #c0392b;
+        transform: translateY(-3px);
+        box-shadow: var(--shadow);
+      }
+
+      .about {
+        padding: 4rem 0;
+        background-color: white;
+      }
+
+      .section-title {
+        text-align: center;
+        margin-bottom: 3rem;
+        position: relative;
+      }
+
+      .section-title::after {
+        content: "";
+        display: block;
+        width: 50px;
+        height: 3px;
+        background-color: var(--primary-color);
+        margin: 0.5rem auto;
+      }
+
+      .about-content {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+      }
+
+      .about-text {
+        flex: 1;
+      }
+
+      .about-image {
+        flex: 1;
+        text-align: center;
+      }
+
+      .about-image img {
+        max-width: 100%;
+        border-radius: 10px;
+        box-shadow: var(--shadow);
+      }
     </style>
   </head>
   <body>
@@ -108,5 +187,53 @@
         </div>
       </div>
     </header>
+
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Halo, Saya Mahasiswa Teknik Informatika Unila</h1>
+          <p>
+            Selamat datang di website pribadi saya. Saya seorang mahasiswa aktif
+            di Program Studi Teknik Informatika Universitas Lampung yang
+            memiliki ketertarikan dalam pengembangan perangkat lunak dan
+            teknologi informasi.
+          </p>
+          <a href="#articles" class="btn">Lihat Artikel</a>
+        </div>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div class="container">
+        <h2 class="section-title">Tentang Saya</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              Saya A M Rama, seorang mahasiswa Teknik Informatika Universitas
+              Lampung yang saat ini sedang menempuh studi di semester 5. Selama
+              masa studi, saya telah mempelajari berbagai bidang seperti
+              pemrograman, basis data, jaringan komputer, dan rekayasa perangkat
+              lunak.
+            </p>
+            <p>
+              Di website ini, saya akan berbagi berbagai artikel tentang
+              teknologi informasi, pemrograman, pengalaman belajar di kampus,
+              serta tips dan trik seputar dunia informatika. Tujuan saya adalah
+              untuk mendokumentasikan proses belajar sekaligus berbagi
+              pengetahuan dengan rekan-rekan mahasiswa lainnya.
+            </p>
+            <p>
+              Selain aktif dalam perkuliahan, saya juga terlibat dalam
+              organisasi kemahasiswaan. Saya percaya bahwa ilmu komputer adalah
+              bidang yang terus berkembang, dan melalui website ini, saya ingin
+              terus belajar dan berkontribusi bagi komunitas teknologi
+              informasi.
+            </p>
+          </div>
+          <div class="about-image">
+            <img src="img/profil.png" alt="Foto Profil" />
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
