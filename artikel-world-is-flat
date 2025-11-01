@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>10 Kekuatan yang Mendatarkan Dunia - Website Pribadi</title>
+    <style>
+      :root {
+        --primary-color: #3498db;
+        --secondary-color: #2c3e50;
+        --accent-color: #e74c3c;
+        --light-color: #ecf0f1;
+        --dark-color: #2c3e50;
+        --text-color: #333;
+        --text-light: #7f8c8d;
+        --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        --transition: all 0.3s ease;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: var(--text-color);
+        background-color: #f9f9f9;
+      }
+
+      a {
+        text-decoration: none;
+        color: var(--primary-color);
+        transition: var(--transition);
+      }
+
+      a:hover {
+        color: var(--accent-color);
+      }
+
+      .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+      }
+
+      header {
+        background-color: var(--secondary-color);
+        color: white;
+        padding: 1rem 0;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        box-shadow: var(--shadow);
+      }
+
+      .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: white;
+      }
+
+      .logo span {
+        color: var(--primary-color);
+      }
+
+      nav ul {
+        display: flex;
+        list-style: none;
+      }
+
+      nav ul li {
+        margin-left: 1.5rem;
+      }
+
+      nav ul li a {
+        color: white;
+        font-weight: 500;
+      }
+
+      nav ul li a:hover {
+        color: var(--primary-color);
+      }
+
+      .breadcrumb {
+        padding: 1rem 0;
+        background-color: #f5f7fa;
+      }
+
+      .breadcrumb a {
+        color: var(--text-light);
+      }
+
+      .breadcrumb a:hover {
+        color: var(--primary-color);
+      }
+
+      .breadcrumb span {
+        color: var(--text-light);
+        margin: 0 0.5rem;
+      }
+
+      .article-detail {
+        padding: 2rem 0;
+        background-color: white;
+      }
+
+      .article-header {
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+
+      .article-header h1 {
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
+      }
+
+      .article-meta {
+        display: flex;
+        justify-content: center;
+        color: var(--text-light);
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+      }
+
+      .article-meta span {
+        margin: 0 1rem;
+      }
+
+      .article-image {
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+        margin-bottom: 2rem;
+        border-radius: 10px;
+      }
+
+      .article-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .article-content {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .article-content h2 {
+        margin: 2rem 0 1rem;
+        color: var(--secondary-color);
+      }
+
+      .article-content p {
+        margin-bottom: 1.5rem;
+      }
+
+      .article-content ul,
+      .article-content ol {
+        margin-bottom: 1.5rem;
+        padding-left: 1.5rem;
+      }
+
+      .article-content li {
+        margin-bottom: 0.5rem;
+      }
+
+      .back-btn {
+        display: inline-block;
+        background-color: var(--primary-color);
+        color: white;
+        padding: 0.8rem 1.5rem;
+        border-radius: 5px;
+        font-weight: 600;
+        transition: var(--transition);
+        margin-top: 2rem;
+      }
+
+      .back-btn:hover {
+        background-color: #2980b9;
+        transform: translateY(-3px);
+        box-shadow: var(--shadow);
+      }
+
+      footer {
+        background-color: var(--secondary-color);
+        color: white;
+        padding: 2rem 0;
+        text-align: center;
+      }
+
+      .copyright {
+        margin-top: 1rem;
+        font-size: 0.9rem;
+        color: rgba(255, 255, 255, 0.7);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <a href="index.html" class="logo">Porto<span>folio</span></a>
+          <nav>
+            <ul>
+              <li><a href="index.html#home">Home</a></li>
+              <li><a href="index.html#about">Tentang</a></li>
+              <li><a href="index.html#articles">Artikel</a></li>
+              <li><a href="index.html#contact">Kontak</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="breadcrumb">
+      <div class="container">
+        <a href="index.html">Home</a> <span>></span>
+        <a href="index.html#articles">Artikel</a> <span>></span>
+        <span>10 Kekuatan yang Mendatarkan Dunia</span>
+      </div>
+    </div>
+    <section class="article-detail">
+      <div class="container">
+        <div class="article-header">
+          <h1>10 Kekuatan yang Mendatarkan Dunia Menurut Thomas Friedman</h1>
+          <div class="article-meta">
+            <span>22 September 2025</span>
+            <span>Oleh: A M Rama</span>
+            <span>8 menit membaca</span>
+          </div>
+        </div>
+
+        <div class="article-image">
+          <img
+            src="img/world_is_flat.png"
+            alt="10 Kekuatan yang Mendatarkan Dunia"
+          />
+        </div>
+        <div class="article-content">
+          <p>
+            Dalam buku terkenalnya "The World Is Flat: A Brief History of the
+            Twenty-First Century", Thomas L. Friedman mengemukakan teori bahwa
+            globalisasi telah "mendatarkan" dunia, membuatnya menjadi tempat
+            yang lebih terhubung dan setara. Friedman mengidentifikasi 10
+            kekuatan utama yang bertanggung jawab atas proses pendataran dunia
+            ini.
+          </p>
+          <h2>Konsep Dasar "Dunia yang Datar"</h2>
+          <p>
+            Friedman menggunakan metafora "dunia datar" untuk menggambarkan
+            bagaimana teknologi dan globalisasi telah menghilangkan hambatan
+            geografis dan hierarkis tradisional. Dalam dunia yang datar,
+            individu dan perusahaan dari mana saja dapat berkolaborasi dan
+            bersaing secara global.
+          </p>
+          <h2>10 Kekuatan yang Mendatarkan Dunia</h2>
+          <h3>1. Jatuhnya Tembok Berlin (11/9/1989)</h3>
+          <p>
+            Peristiwa ini menandai berakhirnya Perang Dingin dan dimulainya era
+            baru di mana ekonomi pasar bebas mulai mendominasi dunia. Friedman
+            menyebutnya sebagai "11/9" (9 November) untuk membedakannya dari
+            serangan 11 September.
+          </p>
+          <h3>2. Kebangkitan Netscape (8/9/1995)</h3>
+          <p>
+            Peluncuran browser Netscape Navigator membuat internet dapat diakses
+            oleh masyarakat umum. Ini menandai dimulainya era internet komersial
+            dan memungkinkan orang dari seluruh dunia untuk terhubung dengan
+            mudah.
+          </p>
+          <h3>3. Alur Kerja Perangkat Lunak (Workflow Software)</h3>
+          <p>
+            Perkembangan perangkat lunak yang memungkinkan kolaborasi lintas
+            platform dan lokasi. Contohnya termasuk ERP, CRM, dan sistem
+            manajemen dokumen yang memungkinkan orang bekerja bersama meskipun
+            terpisah secara geografis.
+          </p>
+          <h3>4. Sumber Terbuka (Open Sourcing)</h3>
+          <p>
+            Gerakan open source memungkinkan kolaborasi global dalam
+            pengembangan perangkat lunak. Linux, Wikipedia, dan Apache adalah
+            contoh bagaimana orang dari seluruh dunia dapat berkontribusi pada
+            proyek bersama.
+          </p>
+          <h3>5. Outsourcing</h3>
+          <p>
+            Perusahaan dapat memindahkan bagian dari operasi mereka ke negara
+            dengan biaya lebih rendah. Ini memungkinkan efisiensi biaya dan
+            akses ke talenta global.
+          </p>
+          <h3>6. Offshoring</h3>
+          <p>
+            Berbeda dengan outsourcing, offshoring melibatkan pemindahan seluruh
+            operasi ke luar negeri. China menjadi pusat manufaktur dunia karena
+            kemampuan offshoring ini.
+          </p>
+          <h3>7. Rantai Pasokan (Supply Chaining)</h3>
+          <p>
+            Pengembangan rantai pasokan global yang efisien, seperti yang
+            dicontohkan oleh Walmart. Ini memungkinkan koordinasi yang mulus
+            antara pemasok, produsen, dan pengecer di seluruh dunia.
+          </p>
+          <h3>8. Insourcing</h3>
+          <p>
+            Perusahaan seperti UPS tidak hanya mengirim paket, tetapi juga
+            mengelola logistik dan operasi untuk perusahaan lain. Ini
+            menciptakan jaringan kolaborasi yang kompleks.
+          </p>
+          <h3>9. In-forming</h3>
+          <p>
+            Kemampuan untuk mencari dan mengakses informasi secara instan
+            melalui mesin pencari seperti Google. Ini memberdayakan individu
+            dengan pengetahuan yang sebelumnya tidak dapat diakses.
+          </p>
+          <h3>10. "The Steroids"</h3>
+          <p>
+            Teknologi digital, pribadi, dan mobile yang memperkuat sembilan
+            kekuatan lainnya. Termasuk di dalamnya adalah komputasi awan,
+            nirkabel, VoIP, dan konferensi video.
+          </p>
+          <h2>Tiga Era Globalisasi Menurut Friedman</h2>
+          <p>Friedman membagi sejarah globalisasi menjadi tiga era:</p>
+          <ol>
+            <li>
+              <strong>Globalisasi 1.0 (1492-1800):</strong> Didorong oleh
+              kekuatan negara dan imperialisme
+            </li>
+            <li>
+              <strong>Globalisasi 2.0 (1800-2000):</strong> Didorong oleh
+              perusahaan multinasional
+            </li>
+            <li>
+              <strong>Globalisasi 3.0 (2000-sekarang):</strong> Didorong oleh
+              individu dan kelompok kecil
+            </li>
+          </ol>
+          <h2>Implikasi Dunia yang Datar</h2>
+          <p>Dunia yang datar memiliki implikasi signifikan:</p>
+          <ul>
+            <li>
+              <strong>Persaingan global:</strong> Individu dan perusahaan harus
+              bersaing secara global
+            </li>
+            <li>
+              <strong>Kolaborasi:</strong> Kemampuan untuk berkolaborasi dengan
+              siapa saja di mana saja
+            </li>
+            <li>
+              <strong>Peluang baru:</strong> Akses ke pasar, talenta, dan
+              ide-ide dari seluruh dunia
+            </li>
+            <li>
+              <strong>Tantangan baru:</strong> Perlunya adaptasi terus-menerus
+              terhadap perubahan teknologi
+            </li>
+          </ul>
+          <h2>Kritik terhadap Teori Friedman</h2>
+          <p>Meskipun berpengaruh, teori Friedman juga menerima kritik:</p>
+          <ul>
+            <li>
+              Mengabaikan ketimpangan yang masih ada antara negara maju dan
+              berkembang
+            </li>
+            <li>
+              Terlalu fokus pada aspek teknologi dan mengabaikan faktor politik
+              dan budaya
+            </li>
+            <li>
+              Metafora "datar" mungkin terlalu menyederhanakan kompleksitas
+              globalisasi
+            </li>
+            <li>Kurang memperhitungkan resistensi terhadap globalisasi</li>
+          </ul>
+          <h2>Relevansi di Era Digital Saat Ini</h2>
+          <p>
+            Konsep Friedman tetap relevan dalam memahami transformasi digital:
+          </p>
+          <ul>
+            <li>
+              Pandemi COVID-19 mempercepat adopsi kerja remote dan kolaborasi
+              digital
+            </li>
+            <li>
+              Ekonomi gig dan platform digital memungkinkan partisipasi global
+            </li>
+            <li>AI dan otomasi semakin mendatarkan bidang-bidang tertentu</li>
+            <li>Isu keamanan siber dan privasi data menjadi tantangan baru</li>
+          </ul>
+          <h2>Kesimpulan</h2>
+          <p>
+            Teori 10 kekuatan yang mendatarkan dunia dari Thomas Friedman
+            memberikan kerangka yang berharga untuk memahami dampak globalisasi
+            dan teknologi. Meskipun dunia mungkin tidak sepenuhnya "datar" dalam
+            arti literal, konsep ini membantu kita memahami bagaimana hambatan
+            tradisional sedang dihancurkan dan peluang baru sedang diciptakan.
+            Bagi individu dan perusahaan, kunci sukses dalam dunia yang datar
+            adalah kemampuan untuk beradaptasi, belajar terus-menerus, dan
+            memanfaatkan teknologi untuk berkolaborasi secara global.
+          </p>
+          <a href="index.html#articles" class="back-btn"
+            >← Kembali ke Daftar Artikel</a
+          >
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <p class="copyright">&copy; 2025 A M Rama. Semua Hak Dilindungi.</p>
+      </div>
+    </footer>
+  </body>
+</html>

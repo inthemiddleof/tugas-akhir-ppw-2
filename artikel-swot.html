@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Analisis SWOT - Website Pribadi</title>
+    <style>
+      :root {
+        --primary-color: #3498db;
+        --secondary-color: #2c3e50;
+        --accent-color: #e74c3c;
+        --light-color: #ecf0f1;
+        --dark-color: #2c3e50;
+        --text-color: #333;
+        --text-light: #7f8c8d;
+        --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        --transition: all 0.3s ease;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: var(--text-color);
+        background-color: #f9f9f9;
+      }
+
+      a {
+        text-decoration: none;
+        color: var(--primary-color);
+        transition: var(--transition);
+      }
+
+      a:hover {
+        color: var(--accent-color);
+      }
+
+      .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+      }
+
+      header {
+        background-color: var(--secondary-color);
+        color: white;
+        padding: 1rem 0;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        box-shadow: var(--shadow);
+      }
+
+      .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: white;
+      }
+
+      .logo span {
+        color: var(--primary-color);
+      }
+
+      nav ul {
+        display: flex;
+        list-style: none;
+      }
+
+      nav ul li {
+        margin-left: 1.5rem;
+      }
+
+      nav ul li a {
+        color: white;
+        font-weight: 500;
+      }
+
+      nav ul li a:hover {
+        color: var(--primary-color);
+      }
+
+      .breadcrumb {
+        padding: 1rem 0;
+        background-color: #f5f7fa;
+      }
+
+      .breadcrumb a {
+        color: var(--text-light);
+      }
+
+      .breadcrumb a:hover {
+        color: var(--primary-color);
+      }
+
+      .breadcrumb span {
+        color: var(--text-light);
+        margin: 0 0.5rem;
+      }
+
+      .article-detail {
+        padding: 2rem 0;
+        background-color: white;
+      }
+
+      .article-header {
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+
+      .article-header h1 {
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
+      }
+
+      .article-meta {
+        display: flex;
+        justify-content: center;
+        color: var(--text-light);
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+      }
+
+      .article-meta span {
+        margin: 0 1rem;
+      }
+
+      .article-image {
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+        margin-bottom: 2rem;
+        border-radius: 10px;
+      }
+
+      .article-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .article-content {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .article-content h2 {
+        margin: 2rem 0 1rem;
+        color: var(--secondary-color);
+      }
+
+      .article-content p {
+        margin-bottom: 1.5rem;
+      }
+
+      .article-content ul,
+      .article-content ol {
+        margin-bottom: 1.5rem;
+        padding-left: 1.5rem;
+      }
+
+      .article-content li {
+        margin-bottom: 0.5rem;
+      }
+
+      .back-btn {
+        display: inline-block;
+        background-color: var(--primary-color);
+        color: white;
+        padding: 0.8rem 1.5rem;
+        border-radius: 5px;
+        font-weight: 600;
+        transition: var(--transition);
+        margin-top: 2rem;
+      }
+
+      .back-btn:hover {
+        background-color: #2980b9;
+        transform: translateY(-3px);
+        box-shadow: var(--shadow);
+      }
+
+      footer {
+        background-color: var(--secondary-color);
+        color: white;
+        padding: 2rem 0;
+        text-align: center;
+      }
+
+      .copyright {
+        margin-top: 1rem;
+        font-size: 0.9rem;
+        color: rgba(255, 255, 255, 0.7);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <a href="index.html" class="logo">Porto<span>folio</span></a>
+          <nav>
+            <ul>
+              <li><a href="index.html#home">Home</a></li>
+              <li><a href="index.html#about">Tentang</a></li>
+              <li><a href="index.html#articles">Artikel</a></li>
+              <li><a href="index.html#contact">Kontak</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="breadcrumb">
+      <div class="container">
+        <a href="index.html">Home</a> <span>></span>
+        <a href="index.html#articles">Artikel</a> <span>></span>
+        <span>Analisis SWOT</span>
+      </div>
+    </div>
+    <section class="article-detail">
+      <div class="container">
+        <div class="article-header">
+          <h1>Analisis SWOT: Alat Perencanaan Strategis yang Efektif</h1>
+          <div class="article-meta">
+            <span>20 September 2025</span>
+            <span>Oleh: A M Rama</span>
+            <span>5 menit membaca</span>
+          </div>
+        </div>
+        <div class="article-image">
+          <img src="img/swot.jpg" alt="Analisis SWOT" />
+        </div>
+        <div class="article-content">
+          <p>
+            Analisis SWOT adalah alat perencanaan strategis yang digunakan untuk
+            mengidentifikasi dan menganalisis faktor-faktor internal dan
+            eksternal yang dapat mempengaruhi keberhasilan suatu proyek, produk,
+            tempat, atau orang. SWOT merupakan singkatan dari Strengths
+            (Kekuatan), Weaknesses (Kelemahan), Opportunities (Peluang), dan
+            Threats (Ancaman).
+          </p>
+          <h2>Apa itu Analisis SWOT?</h2>
+          <p>
+            Analisis SWOT dikembangkan oleh Albert Humphrey pada tahun 1960-an
+            di Stanford Research Institute. Metode ini telah menjadi alat
+            standar dalam perencanaan strategis bisnis dan organisasi. Analisis
+            SWOT membantu dalam:
+          </p>
+          <ul>
+            <li>Mengidentifikasi kekuatan internal yang dapat dimanfaatkan</li>
+            <li>Mengenali kelemahan internal yang perlu diperbaiki</li>
+            <li>Menemukan peluang eksternal yang dapat dieksploitasi</li>
+            <li>Mengantisipasi ancaman eksternal yang perlu dihindari</li>
+          </ul>
+          <h2>Komponen Analisis SWOT</h2>
+          <h3>1. Strengths (Kekuatan)</h3>
+          <p>
+            Kekuatan adalah faktor internal positif yang memberikan keunggulan
+            kompetitif. Contoh kekuatan meliputi:
+          </p>
+          <ul>
+            <li>Sumber daya yang unik</li>
+            <li>Keahlian khusus</li>
+            <li>Reputasi yang baik</li>
+            <li>Teknologi yang canggih</li>
+          </ul>
+          <h3>2. Weaknesses (Kelemahan)</h3>
+          <p>
+            Kelemahan adalah faktor internal negatif yang menghambat kinerja.
+            Contoh kelemahan meliputi:
+          </p>
+          <ul>
+            <li>Sumber daya yang terbatas</li>
+            <li>Kurangnya pengalaman</li>
+            <li>Reputasi yang buruk</li>
+            <li>Teknologi yang ketinggalan zaman</li>
+          </ul>
+          <h3>3. Opportunities (Peluang)</h3>
+          <p>
+            Peluang adalah faktor eksternal positif yang dapat dimanfaatkan.
+            Contoh peluang meliputi:
+          </p>
+          <ul>
+            <li>Perubahan regulasi yang menguntungkan</li>
+            <li>Perkembangan teknologi baru</li>
+            <li>Perubahan preferensi konsumen</li>
+            <li>Ekspansi pasar</li>
+          </ul>
+          <h3>4. Threats (Ancaman)</h3>
+          <p>
+            Ancaman adalah faktor eksternal negatif yang dapat merugikan. Contoh
+            ancaman meliputi:
+          </p>
+          <ul>
+            <li>Persaingan yang ketat</li>
+            <li>Perubahan regulasi yang merugikan</li>
+            <li>Perubahan preferensi konsumen</li>
+            <li>Kondisi ekonomi yang tidak stabil</li>
+          </ul>
+          <h2>Langkah-langkah Melakukan Analisis SWOT</h2>
+          <ol>
+            <li>
+              <strong>Tentukan tujuan:</strong> Tentukan apa yang ingin dicapai
+              dengan analisis SWOT.
+            </li>
+            <li>
+              <strong>Kumpulkan informasi:</strong> Kumpulkan data yang relevan
+              dari berbagai sumber.
+            </li>
+            <li>
+              <strong>Identifikasi faktor internal:</strong> Buat daftar
+              kekuatan dan kelemahan.
+            </li>
+            <li>
+              <strong>Identifikasi faktor eksternal:</strong> Buat daftar
+              peluang dan ancaman.
+            </li>
+            <li>
+              <strong>Analisis dan prioritaskan:</strong> Evaluasi dan
+              prioritaskan faktor-faktor yang telah diidentifikasi.
+            </li>
+            <li>
+              <strong>Kembangkan strategi:</strong> Buat strategi berdasarkan
+              hasil analisis.
+            </li>
+          </ol>
+          <h2>Contoh Penerapan Analisis SWOT</h2>
+          <p>
+            Berikut adalah contoh analisis SWOT untuk sebuah startup teknologi:
+          </p>
+          <ul>
+            <li>
+              <strong>Kekuatan:</strong> Tim yang berpengalaman, teknologi
+              inovatif
+            </li>
+            <li>
+              <strong>Kelemahan:</strong> Modal terbatas, brand awareness rendah
+            </li>
+            <li>
+              <strong>Peluang:</strong> Permintaan pasar yang tinggi, dukungan
+              pemerintah
+            </li>
+            <li>
+              <strong>Ancaman:</strong> Persaingan dari perusahaan besar,
+              perubahan regulasi
+            </li>
+          </ul>
+          <h2>Kesimpulan</h2>
+          <p>
+            Analisis SWOT adalah alat yang powerful untuk perencanaan strategis.
+            Dengan memahami kekuatan, kelemahan, peluang, dan ancaman,
+            organisasi atau individu dapat membuat keputusan yang lebih baik dan
+            mengembangkan strategi yang efektif. Meskipun sederhana, analisis
+            SWOT dapat memberikan wawasan yang berharga ketika dilakukan dengan
+            benar.
+          </p>
+          <a href="index.html#articles" class="back-btn"
+            >← Kembali ke Daftar Artikel</a
+          >
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <p class="copyright">&copy; 2025 A M Rama. Semua Hak Dilindungi.</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Analisis Porter - Website Pribadi</title>
+    <style>
+      :root {
+        --primary-color: #3498db;
+        --secondary-color: #2c3e50;
+        --accent-color: #e74c3c;
+        --light-color: #ecf0f1;
+        --dark-color: #2c3e50;
+        --text-color: #333;
+        --text-light: #7f8c8d;
+        --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        --transition: all 0.3s ease;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: var(--text-color);
+        background-color: #f9f9f9;
+      }
+
+      a {
+        text-decoration: none;
+        color: var(--primary-color);
+        transition: var(--transition);
+      }
+
+      a:hover {
+        color: var(--accent-color);
+      }
+
+      .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+      }
+
+      header {
+        background-color: var(--secondary-color);
+        color: white;
+        padding: 1rem 0;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        box-shadow: var(--shadow);
+      }
+
+      .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: white;
+      }
+
+      .logo span {
+        color: var(--primary-color);
+      }
+
+      nav ul {
+        display: flex;
+        list-style: none;
+      }
+
+      nav ul li {
+        margin-left: 1.5rem;
+      }
+
+      nav ul li a {
+        color: white;
+        font-weight: 500;
+      }
+
+      nav ul li a:hover {
+        color: var(--primary-color);
+      }
+
+      .breadcrumb {
+        padding: 1rem 0;
+        background-color: #f5f7fa;
+      }
+
+      .breadcrumb a {
+        color: var(--text-light);
+      }
+
+      .breadcrumb a:hover {
+        color: var(--primary-color);
+      }
+
+      .breadcrumb span {
+        color: var(--text-light);
+        margin: 0 0.5rem;
+      }
+
+      .article-detail {
+        padding: 2rem 0;
+        background-color: white;
+      }
+
+      .article-header {
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+
+      .article-header h1 {
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
+      }
+
+      .article-meta {
+        display: flex;
+        justify-content: center;
+        color: var(--text-light);
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+      }
+
+      .article-meta span {
+        margin: 0 1rem;
+      }
+
+      .article-image {
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+        margin-bottom: 2rem;
+        border-radius: 10px;
+      }
+
+      .article-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .article-content {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .article-content h2 {
+        margin: 2rem 0 1rem;
+        color: var(--secondary-color);
+      }
+
+      .article-content p {
+        margin-bottom: 1.5rem;
+      }
+
+      .article-content ul,
+      .article-content ol {
+        margin-bottom: 1.5rem;
+        padding-left: 1.5rem;
+      }
+
+      .article-content li {
+        margin-bottom: 0.5rem;
+      }
+
+      .back-btn {
+        display: inline-block;
+        background-color: var(--primary-color);
+        color: white;
+        padding: 0.8rem 1.5rem;
+        border-radius: 5px;
+        font-weight: 600;
+        transition: var(--transition);
+        margin-top: 2rem;
+      }
+
+      .back-btn:hover {
+        background-color: #2980b9;
+        transform: translateY(-3px);
+        box-shadow: var(--shadow);
+      }
+
+      footer {
+        background-color: var(--secondary-color);
+        color: white;
+        padding: 2rem 0;
+        text-align: center;
+      }
+
+      .copyright {
+        margin-top: 1rem;
+        font-size: 0.9rem;
+        color: rgba(255, 255, 255, 0.7);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <a href="index.html" class="logo">Porto<span>folio</span></a>
+          <nav>
+            <ul>
+              <li><a href="index.html#home">Home</a></li>
+              <li><a href="index.html#about">Tentang</a></li>
+              <li><a href="index.html#articles">Artikel</a></li>
+              <li><a href="index.html#contact">Kontak</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="breadcrumb">
+      <div class="container">
+        <a href="index.html">Home</a> <span>></span>
+        <a href="index.html#articles">Artikel</a> <span>></span>
+        <span>Analisis Porter</span>
+      </div>
+    </div>
+    <section class="article-detail">
+      <div class="container">
+        <div class="article-header">
+          <h1>Analisis Porter: Memahami Struktur Persaingan Industri</h1>
+          <div class="article-meta">
+            <span>20 September 2025</span>
+            <span>Oleh: A M Rama</span>
+            <span>6 menit membaca</span>
+          </div>
+        </div>
+        <div class="article-image">
+          <img src="img/porter.jpg" alt="Analisis Porter" />
+        </div>
+        <div class="article-content">
+          <p>
+            Analisis Porter, atau lebih tepatnya Analisis Lima Kekuatan Porter,
+            adalah kerangka kerja yang dikembangkan oleh Michael E. Porter dari
+            Harvard Business School pada tahun 1979. Model ini digunakan untuk
+            menganalisis tingkat persaingan dalam suatu industri dan
+            mengembangkan strategi bisnis.
+          </p>
+          <h2>Konsep Dasar Analisis Porter</h2>
+          <p>
+            Menurut Porter, keadaan persaingan dalam suatu industri bergantung
+            pada lima kekuatan dasar:
+          </p>
+          <ol>
+            <li>Ancaman pendatang baru (Threat of New Entrants)</li>
+            <li>Daya tawar pembeli (Bargaining Power of Buyers)</li>
+            <li>Daya tawar pemasok (Bargaining Power of Suppliers)</li>
+            <li>Ancaman produk pengganti (Threat of Substitute Products)</li>
+            <li>
+              Persaingan antar perusahaan yang ada (Rivalry Among Existing
+              Competitors)
+            </li>
+          </ol>
+          <h2>Penjelasan Lima Kekuatan Porter</h2>
+          <h3>1. Ancaman Pendatang Baru (Threat of New Entrants)</h3>
+          <p>
+            Kekuatan ini mengukur seberapa mudah atau sulitnya perusahaan baru
+            memasuki industri. Faktor-faktor yang mempengaruhi:
+          </p>
+          <ul>
+            <li>
+              <strong>Hambatan masuk:</strong> Skala ekonomi, diferensiasi
+              produk, kebutuhan modal
+            </li>
+            <li>
+              <strong>Akses ke saluran distribusi:</strong> Kemudahan
+              mendapatkan akses ke distributor
+            </li>
+            <li>
+              <strong>Kebijakan pemerintah:</strong> Regulasi dan lisensi yang
+              diperlukan
+            </li>
+            <li>
+              <strong>Biaya beralih:</strong> Biaya yang harus dikeluarkan
+              pelanggan untuk beralih ke produk baru
+            </li>
+          </ul>
+          <h3>2. Daya Tawar Pembeli (Bargaining Power of Buyers)</h3>
+          <p>
+            Kekuatan ini mengukur seberapa besar pengaruh pelanggan terhadap
+            harga dan kualitas produk. Faktor-faktor yang mempengaruhi:
+          </p>
+          <ul>
+            <li>
+              <strong>Jumlah pembeli:</strong> Semakin sedikit pembeli, semakin
+              besar daya tawar mereka
+            </li>
+            <li>
+              <strong>Volume pembelian:</strong> Pembeli dengan volume besar
+              memiliki daya tawar lebih kuat
+            </li>
+            <li>
+              <strong>Biaya beralih:</strong> Semakin rendah biaya beralih,
+              semakin besar daya tawar pembeli
+            </li>
+            <li>
+              <strong>Informasi yang dimiliki pembeli:</strong> Pembeli yang
+              terinformasi memiliki daya tawar lebih kuat
+            </li>
+          </ul>
+          <h3>3. Daya Tawar Pemasok (Bargaining Power of Suppliers)</h3>
+          <p>
+            Kekuatan ini mengukur seberapa besar pengaruh pemasok terhadap harga
+            dan kualitas bahan baku. Faktor-faktor yang mempengaruhi:
+          </p>
+          <ul>
+            <li>
+              <strong>Jumlah pemasok:</strong> Semakin sedikit pemasok, semakin
+              besar daya tawar mereka
+            </li>
+            <li>
+              <strong>Keunikan bahan baku:</strong> Bahan baku yang unik
+              memberikan daya tawar lebih kuat
+            </li>
+            <li>
+              <strong>Biaya beralih pemasok:</strong> Semakin tinggi biaya
+              beralih, semakin besar daya tawar pemasok
+            </li>
+            <li>
+              <strong>Ancaman integrasi ke depan:</strong> Pemasok dapat
+              mengancam untuk masuk ke industri pembeli
+            </li>
+          </ul>
+          <h3>4. Ancaman Produk Pengganti (Threat of Substitute Products)</h3>
+          <p>
+            Kekuatan ini mengukur seberapa mudah pelanggan dapat beralih ke
+            produk atau layanan yang berbeda tetapi memenuhi kebutuhan yang
+            sama. Faktor-faktor yang mempengaruhi:
+          </p>
+          <ul>
+            <li>
+              <strong>Ketersediaan pengganti:</strong> Semakin banyak pengganti,
+              semakin besar ancaman
+            </li>
+            <li>
+              <strong>Harga dan kualitas pengganti:</strong> Pengganti yang
+              lebih murah atau berkualitas lebih baik merupakan ancaman besar
+            </li>
+            <li>
+              <strong>Biaya beralih:</strong> Semakin rendah biaya beralih,
+              semakin besar ancaman pengganti
+            </li>
+          </ul>
+          <h3>
+            5. Persaingan Antar Perusahaan yang Ada (Rivalry Among Existing
+            Competitors)
+          </h3>
+          <p>
+            Kekuatan ini mengukur intensitas persaingan antara
+            perusahaan-perusahaan yang sudah ada dalam industri. Faktor-faktor
+            yang mempengaruhi:
+          </p>
+          <ul>
+            <li>
+              <strong>Jumlah pesaing:</strong> Semakin banyak pesaing, semakin
+              ketat persaingan
+            </li>
+            <li>
+              <strong>Tingkat pertumbuhan industri:</strong> Industri yang
+              stagnan cenderung memiliki persaingan lebih ketat
+            </li>
+            <li>
+              <strong>Biaya tetap:</strong> Biaya tetap yang tinggi mendorong
+              persaingan harga
+            </li>
+            <li>
+              <strong>Diferensiasi produk:</strong> Produk yang sulit dibedakan
+              meningkatkan persaingan
+            </li>
+          </ul>
+          <h2>Penerapan Analisis Porter</h2>
+          <p>Analisis Porter dapat diterapkan dalam berbagai konteks:</p>
+          <ul>
+            <li>
+              <strong>Perencanaan strategis:</strong> Mengembangkan strategi
+              berdasarkan analisis lingkungan kompetitif
+            </li>
+            <li>
+              <strong>Evaluasi investasi:</strong> Menilai daya tarik industri
+              sebelum melakukan investasi
+            </li>
+            <li>
+              <strong>Pengembangan bisnis:</strong> Mengidentifikasi peluang dan
+              ancaman dalam industri
+            </li>
+            <li>
+              <strong>Manajemen risiko:</strong> Mengantisipasi perubahan dalam
+              lingkungan kompetitif
+            </li>
+          </ul>
+          <h2>Keterbatasan Analisis Porter</h2>
+          <p>
+            Meskipun berguna, analisis Porter memiliki beberapa keterbatasan:
+          </p>
+          <ul>
+            <li>
+              Bersifat statis dan tidak memperhitungkan perubahan dinamis dalam
+              industri
+            </li>
+            <li>Mengasumsikan struktur industri yang jelas</li>
+            <li>Kurang memperhitungkan inovasi disruptif</li>
+            <li>Tidak mempertimbangkan kolaborasi dan aliansi strategis</li>
+          </ul>
+          <h2>Kesimpulan</h2>
+          <p>
+            Analisis Lima Kekuatan Porter tetap menjadi alat yang berharga untuk
+            memahami dinamika persaingan dalam suatu industri. Dengan
+            menganalisis kelima kekuatan ini, perusahaan dapat mengembangkan
+            strategi yang efektif untuk bersaing dan mencapai keunggulan
+            kompetitif. Meskipun memiliki keterbatasan, kerangka kerja ini
+            memberikan dasar yang solid untuk analisis strategis.
+          </p>
+          <a href="index.html#articles" class="back-btn"
+            >← Kembali ke Daftar Artikel</a
+          >
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <p class="copyright">&copy; 2025 A M Rama. Semua Hak Dilindungi.</p>
+      </div>
+    </footer>
+  </body>
+</html>
