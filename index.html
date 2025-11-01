@@ -170,69 +170,73 @@
         box-shadow: var(--shadow);
       }
 
-      .articles {
-        padding: 4rem 0;
-        background-color: #f5f7fa;
-      }
+/* --- Modifikasi Section Articles --- */
 
-      .articles-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        gap: 2rem;
-      }
+.articles {
+    padding: 5rem 0;
+    /* Ubah latar belakang menjadi light-color untuk kontras */
+    background-color: var(--light-color);
+}
 
-      .article-card {
-        background-color: white;
-        border-radius: 10px;
-        overflow: hidden;
-        box-shadow: var(--shadow);
-        transition: var(--transition);
-      }
+.articles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 3rem; /* Jarak antar kartu lebih jauh */
+}
 
-      .article-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-      }
+.article-card {
+    background-color: white;
+    border-radius: 12px; /* Sudut membulat */
+    overflow: hidden;
+    /* SHADOW BARU: Lebih tebal dan berwarna (sedikit kebiruan) */
+    box-shadow: 0 10px 25px rgba(52, 152, 219, 0.2); 
+    /* BORDER BARU: Garis halus berwarna primary */
+    border: 3px solid var(--primary-color);
+    /* Transisi yang lebih dramatis dan 'pegas' */
+    transition: all 0.5s cubic-bezier(0.2, 0.8, 0.3, 1.2); 
+}
 
-      .article-image {
-        height: 200px;
-        overflow: hidden;
-      }
+.article-card:hover {
+    /* PERUBAHAN UTAMA: Efek 3D yang lebih nyata saat hover */
+    transform: scale(1.05) rotate(0.5deg) translateY(-15px); 
+    /* SHADOW HOVER: Jauh lebih gelap dan menonjol */
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+}
 
-      .article-image img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        transition: var(--transition);
-      }
+.article-image {
+    height: 220px;
+    overflow: hidden;
+}
 
-      .article-card:hover .article-image img {
-        transform: scale(1.05);
-      }
+.article-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
 
-      .article-content {
-        padding: 1.5rem;
-      }
+.article-card:hover .article-image img {
+    transform: scale(1.15); /* Zoom gambar lebih kuat */
+    opacity: 0.9;
+}
 
-      .article-content h3 {
-        margin-bottom: 0.5rem;
-        font-size: 1.3rem;
-      }
+.article-content {
+    padding: 2rem;
+}
 
-      .article-meta {
-        display: flex;
-        justify-content: space-between;
-        color: var(--text-light);
-        font-size: 0.9rem;
-        margin-bottom: 1rem;
-      }
+.article-content h3 {
+    margin-bottom: 0.8rem;
+    font-size: 1.5rem;
+    color: var(--secondary-color); /* Judul artikel menggunakan warna sekunder */
+}
 
-      .read-more {
-        display: inline-block;
-        color: var(--primary-color);
-        font-weight: 600;
-        margin-top: 1rem;
-      }
+.read-more {
+    display: inline-block;
+    color: var(--accent-color); /* Ubah warna link 'Baca Selengkapnya' ke accent */
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-top: 1rem;
+}
 
       .contact {
         padding: 4rem 0;
